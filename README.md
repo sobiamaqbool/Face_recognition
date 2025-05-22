@@ -17,27 +17,27 @@ This project is a complete face recognition system built with Python, OpenCV, sc
 
 ## How It Works
 
-# Load Dataset:
+## Load Dataset:
 Each person has their own subfolder containing grayscale face images.
-# Preprocessing:
+## Preprocessing:
 Resize each image to 100x100 pixels.
 Flatten into a 1D vector.
 Normalize with StandardScaler.
-# PCA:
+## PCA:
 Reduce dimensionality to 100 principal components.
 Capture ~95% of variance in data.
-# SVM Training:
+## SVM Training:
 Hyperparameter tuning via GridSearchCV.
 Uses an RBF kernel for non-linear decision boundaries.
-# Testing:
+## Testing:
 Accuracy and confusion matrix printed.
 Eigenfaces and reconstructed face examples plotted.
-# GUI:
+## GUI:
 Add new face data via webcam.
 Remove individuals from dataset.
 Launch webcam for real-time recognition.
 
-# Limitations & Suggestions
+## Limitations & Suggestions
 
 Ensure well-lit face images and consistent image size.
 At least 5–10 images per person are recommended.
